@@ -2,8 +2,9 @@
 
 ## Installation 
 
-Install the [Mask RCNN library](https://github.com/matterport/Mask_RCNN/) and all its dependencies. It is recommended to create a 
-virtual environment and install the dependencies using the following command. 
+安装[Mask RCNN library](https://github.com/matterport/Mask_RCNN/)及其所有依赖项。 
+建议创建一个虚拟环境并使用以下命令安装依赖项。
+
 
 ```python
 pip install -r requirementsMaskRCNN.txt
@@ -13,7 +14,7 @@ The [requirementsMaskRCNN](../code/mask-rcnn/requirementsMaskRCNN.txt) can be fo
 
 ## Folder structure
 
-Create a folder ``maskrcnnmodels``, and organize your dataset with the following structure.
+Create a folder ``maskrcnnmodels``, and 使用以下结构整理数据集。
 
 ```bash
 maskrcnnmodels
@@ -29,23 +30,25 @@ maskrcnnmodels
         ├── 00003.jpg
         ├── ...
 ```
-The images must be annotated using the Pascal VOC dataset (xml files of the ``annots`` folder). A tool for annotating images using this format is [LabelImg](https://github.com/tzutalin/labelImg).
+必须使用Pascal VOC数据集（“annots”文件夹的xml文件）对图像进行注释。 
+使用此格式注释图像的工具是[LabelImg](https://github.com/tzutalin/labelImg).。
 
 ## Necessary files
 
-In order to fine-tune a model using this algorithm, it is necessary to download the following files in the folder ``maskrcnnmodels``:
+为了使用此算法微调模型，必须在文件夹中下载以下文件 ``maskrcnnmodels``:
 - [TableBank weights](https://www.dropbox.com/s/dcl53rl3xqndfdx/mask_rcnn_tablebank_cfg_0002.h5?dl=1).
 - [Template training file](../code/mask-rcnn/template.py)
 
 ## Training
-
-First of all, it is necessary to modify the template file downloaded in the previous step. Just search the text ``<- MODIFY ->``  in the template file and follow the instructions. To train the model execute the following command in the folder ``maskrcnnmodels``:
+首先，必须修改上一步中下载的模板文件。 
+只需在模板文件中搜索文本``<- MODIFY ->``并按照说明进行操作即可。 
+要训练模型，请在``maskrcnnmodels``文件夹中执行以下命令：
 
 ```python
 python template.py
 ```
-
-The weights of the models will be stored in a folder called ``model_cfg``. You can use the models created in there using the [Mask RCNN notebook](https://colab.research.google.com/drive/1smseOGcUZZjvMfDHnoW8-ancldz-zpOg) or the [predict file](./code/mask-rcnn/predict.py) only by changing the weights files. 
-
+模型的权重将存储在名为``model_cfg``的文件夹中。 
+您可以使用[Mask RCNN notebook](https://colab.research.google.com/drive/1smseOGcUZZjvMfDHnoW8-ancldz-zpOg)
+或[predict file](./code/mask-rcnn/predict.py)只能通过更改权重文件。
 
 
