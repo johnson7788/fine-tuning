@@ -1,6 +1,13 @@
 # Model Zoo for table detection
 
-We have trained several models for the following datasets: [ICDAR13](http://www.tamirhassan.com/html/competition.html), [ICDAR17](http://u-pat.org/ICDAR2017/program_competitions.php) (this dataset is used to construct models for detecting tables, figures and formulas), [ICDAR19 modern images](http://sac.founderit.com/), Invoices (a private dataset that is available under request), [Marmot Chinese](http://www.icst.pku.edu.cn/cpdp/sjzy/index.htm), [Marmot English](http://www.icst.pku.edu.cn/cpdp/sjzy/index.htm) and [UNLV](https://dl.acm.org/citation.cfm?id=1815345). Since these datasets do not provide a publicly available test set; we have split the training sets using the partition 75% for training and 25% for testing. The dataset splits are available as follows. 
+我们已经为以下数据集训练了几种模型：
+[ICDAR13](http://www.tamirhassan.com/html/competition.html), 
+[ICDAR17](http://u-pat.org/ICDAR2017/program_competitions.php) (此数据集用于构建用于检测表格，图形和公式的模型), 
+[ICDAR19 modern images](http://sac.founderit.com/), Invoices (可应要求提供的私有数据), 
+[Marmot Chinese](http://www.icst.pku.edu.cn/cpdp/sjzy/index.htm), 
+[Marmot English](http://www.icst.pku.edu.cn/cpdp/sjzy/index.htm) and 
+[UNLV](https://dl.acm.org/citation.cfm?id=1815345). 
+由于这些数据集未提供公开可用的测试集，因此， 我们使用了75％的分区和25％的测试分区来划分训练集。 数据集拆分如下所示。
 
 
 - ICDAR13: [train set](splits/icdar13-train.txt), [test set](splits/icdar13-test.txt).
@@ -20,15 +27,15 @@ We have trained several models for the following datasets: [ICDAR13](http://www.
 - [SSD weights](https://www.dropbox.com/s/x95ipfjqoncrzt4/ssd_512_resnet50_tablebank_19.params?dl=0).
 - [YOLO weights](https://www.dropbox.com/s/jbgosn1t83h1bqi/tablasFinaltrain_10000.weights?dl=1).
 
-You can see how to fine-tune models using the above weights in the [fine-tuning page](FineTuning.md).
+您可以了解如何使微调模型 in the [fine-tuning page](FineTuning.md).
 
 ## Fine-tuning from natural images
-
-From models trained with the Pascal VOC dataset, we have created several detection models for the aforementioned datasets using fine-tuning with the algorithms Mask-RCNN, RetinaNet, SSD and YOLO. The results are summarized in the following figure.
+从使用Pascal VOC数据集训练的模型中，我们通过使用Mask-RCNN，RetinaNet，SSD和YOLO算法进行微调，
+为上述数据集创建了多个检测模型。 结果总结在下图中。
 
 ![Results transfer learning from natural images](images/das.png)
 
-The trained models are available in the format used by each framework, and distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
+训练好的模型以每种框架使用的格式提供，and distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
 
 || Mask RCNN|RetinaNet|SSD|YOLO|
 |----------|----------|----------|----------|----------|
@@ -44,12 +51,12 @@ The trained models are available in the format used by each framework, and distr
 
 
 ## Fine-tuning from the TableBank dataset
-
-From models trained with the TableBank dataset, we have created several detection models for the aforementioned datasets using fine-tuning with the algorithms Mask-RCNN, RetinaNet, SSD and YOLO. The results are summarized in the following figure.
+从使用TableBank数据集训练的模型中，我们使用Mask-RCNN，RetinaNet，SSD和YOLO算法进行微调，
+从而为上述数据集创建了多个检测模型。 结果总结在下图中。
 
 ![Results transfer learning from the TableBank dataset](images/dasTrans.png)
 
-The trained models are available in the format used by each framework, and distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
+训练好的模型以每种框架使用的格式提供， and distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
 
 || Mask RCNN|RetinaNet|SSD|YOLO|
 |----------|----------|----------|----------|----------|
@@ -64,8 +71,8 @@ The trained models are available in the format used by each framework, and distr
 |UNLV| [weights](https://unirioja-my.sharepoint.com/:u:/g/personal/cedomin_unirioja_es/Eagi7PrqQTxEv3PiVZB6RxYBssrcC2kGPMVbrUkrm3nYEg?e=DzYvxy)|[weights](https://unirioja-my.sharepoint.com/:u:/g/personal/cedomin_unirioja_es/ERGZhy0kC91GrqnJd1GuhdQBka4nC3qpzolsVOCxmIHVgQ?e=Axjjna),[classes file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/retinanet/retinanet_classes.csv)| [weights](https://unirioja-my.sharepoint.com/:u:/g/personal/cedomin_unirioja_es/EQsdYjN32YVPlKCIeMIPR7sBawIRQnwEZPL7OHdRQv9DtA?e=i0spv8) |  [weights](https://unirioja-my.sharepoint.com/:u:/g/personal/cedomin_unirioja_es/EYFwrK7aiaVDqYHLRqy_qqABTNdoiiwibRrKPVACJYbCvw?e=G0m8qg), [config file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/tablasFinaltest416320.cfg), [names file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/vocTablas.names)|
 
 ## Comparison of models
-
-In the next table, we compare the [WF1Avg score](http://sac.founderit.com/evaluation.html) obtained by the models fine-tuned from models constructed using natural images, and the models constructed using the TableBank dataset.
+在下表中，我们比较了[WF1Avg score](http://sac.founderit.com/evaluation.html)），
+该模型是通过使用自然图像构建的模型和使用TableBank数据集构建的模型进行微调而获得的。
 
 ||Mask R-CNN Natural| Mask R-CNN TableBank |RetinaNet Natural| RetinaNet TableBank |SSD Natural| SSD TableBank |YOLO Natural| YOLO TableBank |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|

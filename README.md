@@ -1,14 +1,15 @@
-# Close-Domain fine-tuning for table detection
+# 用于表检测的Close-Domain微调
 
-In this project, we show the benefits of using models trained on a close domain, using the [TableBank dataset](https://github.com/doc-analysis/TableBank), for fine-tuning table detection models. In addition, we provide all the tools for using the constructed models, and fine-tune new detection models with custom datasets. 
+在这个项目中，我们展示了使用  [TableBank dataset](https://github.com/doc-analysis/TableBank),
+Close-Domain训练的模型对表检测模型进行微调的好处。此外，我们提供了使用已构建模型的所有工具，并使用自定义数据集，微调了新的检测模型。 
 
 
 ## TableBank
 
-We have started by training several models for the TableBank dataset. All the models, results, and tools are available in the [TableBank page](TableBank.md) of this repository. 
+我们从训练TableBank数据集的几个模型开始。 所有模型，结果和工具在 [TableBank page](TableBank.md) 
 
 ## Colab Notebooks for prediction
-You can use the trained models with the following notebooks. 
+你可以使用以下notebooks用于训练模型
 
 - [MaskRCNN Notebook](https://colab.research.google.com/drive/1smseOGcUZZjvMfDHnoW8-ancldz-zpOg)
 - [RetinaNet Notebook](https://colab.research.google.com/drive/1Zgu7v7jLAKe-xITDbhBe9EDdCUozW-OB)
@@ -17,11 +18,13 @@ You can use the trained models with the following notebooks.
 
 ## Model Zoo for table detection
 
-From the models constructed with the TableBank dataset, we have fine-tuned models for table detection in different sources. All the information about this process is explained in the [Model Zoo for table detection page](ModelZoo.md) where we show the benefits of applying fine-tuning models generated from the TableBank dataset compared to models trained with natural images.   
+从使用TableBank数据集构建的模型中，我们可以对不同来源的表检测进行微调。 
+关于此过程的所有信息都在[Model Zoo for table detection page](ModelZoo.md)中进行了说明，
+与通过自然图像训练的模型相比，该模型显示了应用从TableBank数据集生成的微调模型的好处。
 
 ## Fine-tuning
-
-We provide the necessary tools to create custom table detection models using as a basis the models that we have constructed using the TableBank dataset. The instructions are provided in the [Fine-tuning page](FineTuning.md). 
+我们提供了必要的工具，以使用TableBank数据集构建的模型作为基础来创建自定义表检测模型。
+The instructions are provided in the [Fine-tuning page](FineTuning.md). 
 
 ## Citation
 
