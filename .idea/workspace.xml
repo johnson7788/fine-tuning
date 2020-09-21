@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="862a7e21-cd9a-44cd-bdfd-496ded8f04a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fine-tuning/maskrcnn.md" beforeDir="false" afterPath="$PROJECT_DIR$/fine-tuning/maskrcnn.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fine-tuning/retinanet.md" beforeDir="false" afterPath="$PROJECT_DIR$/fine-tuning/retinanet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fine-tuning/ssd.md" beforeDir="false" afterPath="$PROJECT_DIR$/fine-tuning/ssd.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fine-tuning/yolo.md" beforeDir="false" afterPath="$PROJECT_DIR$/fine-tuning/yolo.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
