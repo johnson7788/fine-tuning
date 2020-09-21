@@ -9,7 +9,7 @@ Close-Domain训练的模型对表检测模型进行微调的好处。此外，�
 我们从训练TableBank数据集的几个模型开始。 所有模型，结果和工具在 [TableBank page](TableBank.md) 
 
 ## Colab Notebooks for prediction
-你可以使用以下notebooks用于训练模型
+你可以使用以下notebooks用于预测模型
 
 - [MaskRCNN Notebook](https://colab.research.google.com/drive/1smseOGcUZZjvMfDHnoW8-ancldz-zpOg)
 - [RetinaNet Notebook](https://colab.research.google.com/drive/1Zgu7v7jLAKe-xITDbhBe9EDdCUozW-OB)
