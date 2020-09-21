@@ -185,4 +185,4 @@ def showImage(image):
 
 
 if __name__ == '__main__':
-    predict("Latex_100058.jpg")
+    predict("/Users/admin/git/fine-tuning/images/Latex_100058.jpg")
