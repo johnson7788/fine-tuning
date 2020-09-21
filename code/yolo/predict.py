@@ -183,3 +183,6 @@ def showImage(image):
         plt.imshow(img2,cmap='gray')
         plt.show()
 
+
+if __name__ == '__main__':
+    predict("Latex_100058.jpg")

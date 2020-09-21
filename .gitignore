@@ -1,6 +1,10 @@
 # Compiled class file
 *.class
 jupyter/.ipynb_checkpoints
+code/mask-rcnn/mask_rcnn_tablebank_cfg_0002.h5
+code/retinanet/output.h5
+code/ssd/ssd_512_resnet50_tablebank_19.params
+code/yolo/tablasFinaltrain_10000.weights
 
 # Log file
 *.log
